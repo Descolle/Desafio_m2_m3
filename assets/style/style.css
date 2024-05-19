@@ -2,9 +2,6 @@
   margin: 0px;
   padding: 0px;
 }
-body {
-  background-color: aquamarine;
-}
 .containers {
   display: grid;
 }
@@ -24,6 +21,7 @@ body {
   grid-area: nav;
   display: flex;
   justify-content: end;
+  border: 1px solid lightgrey;
   background-color: mintcream;
 }
 .navbar {
@@ -41,7 +39,6 @@ body {
 }
 .main {
   grid-area: main;
-  border: 1px solid;
 }
 .box {
   display: grid;
@@ -53,7 +50,6 @@ body {
   text-align: center;
   border: 1px solid;
   width: 18rem;
-  margin-top: 5px;
 }
 .hijo img {
   width: 12rem;
@@ -128,7 +124,7 @@ h4 {
   }
 }
 
-@media (min-width: 577px) {
+@media (min-width: 992px) {
   .containers {
     display: grid;
     grid-template-areas:
@@ -136,13 +132,31 @@ h4 {
       "nav nav nav"
       "navbar main main"
       "footer footer footer";
-    background-color: azure;
   }
   .header i {
     display: none;
   }
   .box {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .containers {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "navbar main"
+      "footer footer";
+  }
+  .header i {
+    display: none;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
 }
