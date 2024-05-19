@@ -109,7 +109,6 @@ h4 {
   }
   .header {
     justify-content: space-evenly;
-    align-items: center;
   }
   .header i {
     size: 15px;
@@ -129,7 +128,7 @@ h4 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 577px) {
   .containers {
     display: grid;
     grid-template-areas:
