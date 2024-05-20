@@ -15,7 +15,7 @@
   font-family: "MedievalSharp", cursive;
   font-weight: 400;
   font-style: normal;
-  color: blanchedalmond;
+  color: white;
 }
 .nav {
   grid-area: nav;
@@ -71,7 +71,7 @@ h4 {
 }
 .footer {
   grid-area: footer;
-  background-color: #6c451c;
+  background-color: #C4A484;
   text-align: center;
   width: 100%;
 }
@@ -95,6 +95,7 @@ h4 {
   padding: 5px;
 }
 @media (max-width: 576px) {
+  /* Media Querie de Teléfono*/
   .containers {
     grid-template-areas:
       "header"
@@ -125,6 +126,7 @@ h4 {
 }
 
 @media (min-width: 992px) {
+  /* Media Querie de PC*/
   .containers {
     display: grid;
     grid-template-areas:
@@ -143,6 +145,7 @@ h4 {
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
+  /* Media Querie de Tablet*/
   .containers {
     display: grid;
     grid-template-areas:
