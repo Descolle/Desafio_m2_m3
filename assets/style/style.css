@@ -107,8 +107,12 @@ h4 {
   .header {
     justify-content: space-evenly;
   }
-  .header i {
-    size: 15px;
+  .logo {
+    font-size: 2rem;
+  }
+  .borger {
+    display: flex;
+    font-size: 2rem;
   }
   .nav {
     justify-items: center;
@@ -135,7 +139,11 @@ h4 {
       "navbar main main"
       "footer footer footer";
   }
-  .header i {
+  .logo {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .borger {
     display: none;
   }
   .box {
@@ -154,7 +162,11 @@ h4 {
       "navbar main"
       "footer footer";
   }
-  .header i {
+  .logo {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .borger {
     display: none;
   }
   .box {
